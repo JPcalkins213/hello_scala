@@ -1,4 +1,6 @@
 import scala.util.Random
+import scala.collection.mutable.ArrayBuffer
+import scala.collection.mutable.ListBuffer
 object Main extends App {
   // var is whats called a mutable variable, meaing after its been defined you can change it as you please
   var a: Int = 1
@@ -89,7 +91,7 @@ object Main extends App {
   }
   println(sub(5,3))
 
-  // so this is a function that takes in another function and its parameters??????
+  // so this is a function that takes in another function and its parameters?????? i see no usecase for this if you do hmu
   def functionProvider(): (Int, Int) => Int = {
     // lamda function
     (a: Int, b: Int) => a-b
@@ -115,8 +117,68 @@ object Main extends App {
   }
 
   // implicit parameters
-  // implicit paremeters are there so you don't have to provide that parameter. for instance a is a required parameter
+  // implicit paremeters are there so you don't have to provide that parameter. for instance a is a required parameter but since in the second set of parenthesis is implicit you dont have to fill that parameter
   def addConstant(a: Int)(implicit add: Int): Int = {
     a + add
   }
+  implicit val constant = 100
+  println(addConstant(5))
+
+  //arrays 
+  //this is an immutable array is has set values, you cannot remove values but you can replace them
+  var numbers = Array(3,4,7)
+  for (x<- numbers) println(x)
+  numbers(0) = 100
+  numbers(2)= 57
+  for (x<- numbers) println(x)
+
+  //here we are creating a mutable array
+  var words = ArrayBuffer[String]()
+  words += "book"
+  words += "chair"
+  words += "school"
+  for (x<- words) println(x)
+  //this foreach statement does the same thing as on line 139
+  words.foreach(i => println(i))
+  // and this is a more condensed version of the two
+  words.foreach(println)
+
+  //lists
+  var immutableList = List[Int](1,2,3,4,5,6,7,8,9,10)
+  for (x <- immutableList) println(x)
+
+  var mutableList = ListBuffer[Int]()
+  //simply appending to the list this shouldnt be too new
+  mutableList.append(1).append(2).append(3)
+  //doing the same as above but with one .append
+  mutableList.appendAll(List(4,5,6))
+  mutableList.foreach(println)
+  //concatinating a list
+  val x2 = 0 +: mutableList :+ 7 :++ List(8,9,10)
+  x2.foreach(println)
+  //this adds th to the end of each value
+  x2.map(_ + "th").foreach(println)
+  //this does the same but only does it to numbers and prints numbers moded by 2
+  x2.filter(_ %2 == 0).map(_ +"th").foreach(println)
+
+  //maps
+  val hotelCountry = Map(
+    "Plaza" -> "ES",
+    "Premium Hotel" -> "US",
+    "Premium Plaze" -> "US",
+    "Family Hotel" -> "DE"
+  )
+  //grabbing the value of specific key
+  println(hotelCountry.get("Premium Plaza"))
+
+  //itterating through map and printing keys and values
+  hotelCountry.foreach(x => println(s"for each ${x._1} - ${x._2}"))
+
+  //if you wanted to specify the values that can go into your map just do like so 
+  // val hotelCountry = Map[String, String](
+  //   "Plaza" -> "ES",
+  //   "Premium Hotel" -> "US",
+  //   "Premium Plaze" -> "US",
+  //   "Family Hotel" -> "DE"
+  // )
 }
