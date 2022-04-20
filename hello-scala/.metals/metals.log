@@ -1,0 +1,40 @@
+2022.04.20 13:55:00 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/oulls/Documents/scala_tutorials/hello_scala/hello-scala/.metals/lsp.trace.json or /home/oulls/.cache/metals/lsp.trace.json[0m
+2022.04.20 13:55:00 INFO  logging to file /home/oulls/Documents/scala_tutorials/hello_scala/hello-scala/.metals/metals.log[0m
+2022.04.20 13:55:00 INFO  Started: Metals version 0.11.2 in workspace '/home/oulls/Documents/scala_tutorials/hello_scala/hello-scala' for client Visual Studio Code 1.66.2.[0m
+2022.04.20 13:55:00 INFO  Parse release: 11.0.14.1[0m
+2022.04.20 13:55:02 INFO  time: initialize in 1.58s[0m
+2022.04.20 13:55:02 WARN  Build server is not auto-connectable.[0m
+2022.04.20 13:55:04 INFO  running '/usr/lib/jvm/java-11-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals5858436574058148004/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+2022.04.20 13:55:04 WARN  no build target for: /home/oulls/Documents/scala_tutorials/hello_scala/hello-scala/project/metals.sbt[0m
+2022.04.20 13:55:04 WARN  no build target for: /home/oulls/Documents/scala_tutorials/hello_scala/hello-scala/project/project/metals.sbt[0m
+2022.04.20 13:55:04 INFO  skipping build import with status 'Started'[0m
+2022.04.20 13:55:05 INFO  [info] welcome to sbt 1.6.2 (Ubuntu Java 11.0.14.1)[0m
+2022.04.20 13:55:06 INFO  no build target found for /home/oulls/Documents/scala_tutorials/hello_scala/hello-scala/project/metals.sbt. Using presentation compiler with project's scala-library version: 3.1.1[0m
+2022.04.20 13:55:06 INFO  [info] loading settings for project hello-scala-build-build from metals.sbt ...[0m
+2022.04.20 13:55:06 INFO  [info] loading project definition from /home/oulls/Documents/scala_tutorials/hello_scala/hello-scala/project/project[0m
+2022.04.20 13:55:08 INFO  [info] loading settings for project hello-scala-build from metals.sbt ...[0m
+2022.04.20 13:55:08 INFO  [info] loading project definition from /home/oulls/Documents/scala_tutorials/hello_scala/hello-scala/project[0m
+2022.04.20 13:55:10 INFO  [success] Generated .bloop/hello-scala-build.json[0m
+2022.04.20 13:55:10 INFO  [success] Total time: 1 s, completed Apr 20, 2022, 1:55:10 PM[0m
+2022.04.20 13:55:10 INFO  [info] loading settings for project hello-scala from build.sbt ...[0m
+2022.04.20 13:55:10 INFO  [info] set current project to hello-world (in build file:/home/oulls/Documents/scala_tutorials/hello_scala/hello-scala/)[0m
+2022.04.20 13:55:11 INFO  [success] Generated .bloop/hello-scala.json[0m
+2022.04.20 13:55:11 INFO  [success] Generated .bloop/hello-scala-test.json[0m
+2022.04.20 13:55:11 INFO  [success] Total time: 0 s, completed Apr 20, 2022, 1:55:11 PM[0m
+2022.04.20 13:55:11 INFO  time: ran 'sbt bloopInstall' in 7.34s[0m
+2022.04.20 13:55:11 INFO  Attempting to connect to the build server...[0m
+2022.04.20 13:55:11 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/oulls/Documents/scala_tutorials/hello_scala/hello-scala/.metals/bsp.trace.json or /home/oulls/.cache/metals/bsp.trace.json[0m
+2022.04.20 13:55:11 INFO  Attempting to connect to the build server...[0m
+2022.04.20 13:55:11 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/oulls/Documents/scala_tutorials/hello_scala/hello-scala/project/.metals/bsp.trace.json or /home/oulls/.cache/metals/bsp.trace.json[0m
+2022.04.20 13:55:11 INFO  time: Connected to build server in 0.27s[0m
+2022.04.20 13:55:11 INFO  Connected to Build server: Bloop v1.4.13[0m
+2022.04.20 13:55:14 INFO  time: indexed workspace in 2.7s[0m
+Apr 20, 2022 1:57:59 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2022.04.20 13:58:06 INFO  compiling hello-scala (1 scala source)[0m
+2022.04.20 13:58:06 INFO  time: compiled hello-scala in 0.38s[0m
+2022.04.20 13:58:11 INFO  compiling hello-scala (1 scala source)[0m
+2022.04.20 13:58:11 INFO  time: compiled hello-scala in 69ms[0m
+2022.04.20 13:58:49 INFO  compiling hello-scala (1 scala source)[0m
+2022.04.20 13:58:49 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+2022.04.20 13:58:49 INFO  time: compiled hello-scala in 0.58s[0m
