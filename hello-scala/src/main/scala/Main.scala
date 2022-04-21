@@ -1,6 +1,83 @@
 import scala.util.Random
 import scala.collection.mutable.ArrayBuffer
 import scala.collection.mutable.ListBuffer
+
+trait Fruit{
+  val calories: Int
+  def eat(): Unit
+}
+
+trait PomeFruit{
+  def doSomething(): Unit
+}
+
+class Apple(val calories: Int=35, var gram: Int = 10, var color: String = "Red") extends Fruit with PomeFruit{
+  override def eat(): Unit = println(s"eating... $calories calories / $gram grams / color is $color")
+
+  override def doSomething(): Unit = println("doing something...")
+}
+// so the easiest way i can explain traits is in video game terms. in video    games each enemy, teammate and sometimes objects have certain health values, how much damage they can do or damage a certain gun can do those are specific traits of the gun, character, or object same with traits! 
+// if you've played siege here is a good example
+// traits for ella's gun (var damage: Int = 20, var rps: Int = 6, var movementSpeed: Int = 7
+// those variable make up the traits of ellas gun and how the gun can effect ella as well. i.e. movement speed effects how fast ella can run with this specific gun in her hand
+object FoodTraits extends App {
+  var apple = new Apple
+  apple.gram = 13
+  apple.eat()
+  apple.doSomething()
+
+}
+
+
+// compound types
+trait Animal 
+trait Pet
+class Cat extends Animal with Pet
+class Tiger extends Animal
+
+object petAnimals extends App{
+  def feed(animal: Animal with Pet): Unit = println("feeding...")
+
+  feed(new Cat)
+  //since we've added to the feed function Animal with Pet we can only feed the classes (or animals whichever is easiest for you to understand) that extends both Animal and Pet and since Tiger is an animal but not a pet the code below would bring up errors
+  //feed(new Tiger)
+}
+
+//Nested classes
+class A(val a: Int){
+  class B (val b: Int){
+
+  }
+  // you can instantiate class B ONLY IN CLASS A
+  def createB(value: Int): B = new B(value)
+  // now that we instantiated class B in class a we can use class a to call this function outside of a to insantiate class B
+  // this can also be known as a private class as i've heard it called when learning java
+}
+
+object nestedClasses extends App{
+  val a = new A(1)
+  val b = a.createB(2)
+}
+
+//case classes
+// these are like immutable objects. when you have an instance of the case class you cant change the values of the members
+case class Aritcle(title: String, author: String, pages: Int)
+
+object caseClass extends App{
+  // good example here, we instantiated the article case class and gave it values. we cannot change those values now that they are set
+  var article = new Aritcle("Hello World", "JJ Smith", 100)
+  println(s"Article: ${article.title} - ${article.author}")
+}
+
+//singleton objects
+object CoordinateUtils{
+  def createCoordinates(): (Int, Int) = (1,7)
+}
+
+object singletonObject extends App{
+  println(CoordinateUtils.createCoordinates())
+}
+
 object Main extends App {
   // var is whats called a mutable variable, meaing after its been defined you can change it as you please
   var a: Int = 1
