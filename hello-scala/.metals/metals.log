@@ -4140,3 +4140,27 @@ where cases = List()
 2022.04.21 15:48:20 WARN  Could not load snapshot text for /home/oulls/Documents/scala_tutorials/hello_scala/hello-scala/src/main/scala/Main.scala[0m
 2022.04.21 15:48:20 WARN  3 deprecations (since 2.13.0); re-run with -deprecation for details[0m
 2022.04.21 15:48:20 INFO  time: compiled hello-scala in 0.33s[0m
+Apr 22, 2022 8:53:56 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Apr 22, 2022 8:53:56 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2022.04.22 09:12:56 INFO  shutting down Metals[0m
+2022.04.22 09:12:56 INFO  Shut down connection with build server.[0m
+2022.04.22 09:12:56 INFO  Shut down connection with build server.[0m
+2022.04.22 13:50:59 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/oulls/Documents/scala_tutorials/hello_scala/hello-scala/.metals/lsp.trace.json or /home/oulls/.cache/metals/lsp.trace.json
+2022.04.22 13:50:59 INFO  logging to file /home/oulls/Documents/scala_tutorials/hello_scala/hello-scala/.metals/metals.log
+2022.04.22 13:50:59 INFO  Started: Metals version 0.11.2 in workspace '/home/oulls/Documents/scala_tutorials/hello_scala/hello-scala' for client Visual Studio Code 1.66.2.
+2022.04.22 13:50:59 INFO  Parse release: 11.0.14.1
+2022.04.22 13:51:01 INFO  time: initialize in 1.49s
+2022.04.22 13:51:01 INFO  Attempting to connect to the build server...
+2022.04.22 13:51:01 INFO  skipping build import with status 'Installed'
+2022.04.22 13:51:01 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/oulls/Documents/scala_tutorials/hello_scala/hello-scala/.metals/bsp.trace.json or /home/oulls/.cache/metals/bsp.trace.json
+2022.04.22 13:51:01 INFO  Attempting to connect to the build server...
+2022.04.22 13:51:01 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/oulls/Documents/scala_tutorials/hello_scala/hello-scala/project/.metals/bsp.trace.json or /home/oulls/.cache/metals/bsp.trace.json
+2022.04.22 13:51:01 INFO  time: Connected to build server in 0.21s
+2022.04.22 13:51:01 INFO  Connected to Build server: Bloop v1.4.13
+2022.04.22 13:51:04 INFO  time: indexed workspace in 2.57s
+Apr 22, 2022 1:54:11 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Apr 22, 2022 1:54:11 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
